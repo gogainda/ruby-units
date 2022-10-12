@@ -2,13 +2,6 @@ name: Tests
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  workflow_dispatch:
-  schedule:
-    # 00:00 on the 1st of every month
-    - cron: '0 0 1 * *'
 jobs:
   test:
     runs-on: ubuntu-latest
